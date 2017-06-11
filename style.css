@@ -1073,6 +1073,23 @@ pre code {
 	background-color: #2d282d;
 }
 
+.site-header {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: fixed;
+  background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/tatiana-lapina-9276-e1497210063858.jpg);
+  transition: all .15s ease;
+}
+
+@media (min-width: 48em) {
+	.site-header {
+  	background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/cropped-tatiana-lapina-9276.jpg);
+  	background-position: 50% 50%;
+  	background-size: cover;
+  }
+}
+
 @media (min-width:37.5em) {
 	.site-header,
 	.site-header .site-branding {
@@ -1173,6 +1190,12 @@ pre code {
   position: absolute; /* fixed for fullscreen */
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99
+}
+
+@media (max-width: 48em) {
+	.custom-header-media {
+		display: none;
+	}
 }
 
 #wp-custom-header-video {
