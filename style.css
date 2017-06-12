@@ -1093,6 +1093,13 @@ pre code {
 @media (min-width:37.5em) {
 	.site-header,
 	.site-header .site-branding {
+		height: 60vh;
+	}
+}
+
+@media (min-width:37.5em) {
+	.home .site-header,
+	.home .site-header .site-branding {
 		height: 100vh;
 	}
 }
@@ -1100,36 +1107,11 @@ pre code {
 .site-header .site-branding {
 	position: relative;
 	overflow: hidden;
-	padding: 1.5rem 1rem;
 	text-align: center;
-}
-
-@media (min-width:37.5em) {
-	.site-header .site-branding {
-		padding: 3rem 2rem;
-	}
-}
-
-@media (min-width:48em) {
-	.site-header .site-branding {
-		padding: 4.5rem 3rem;
-	}
-}
-
-.home .site-header .site-branding {
-	padding: 3.5rem 1rem;
-}
-
-@media (min-width:37.5em) {
-	.home .site-header .site-branding {
-		padding: 7rem 2rem;
-	}
-}
-
-@media (min-width:48em) {
-	.home .site-header .site-branding {
-		padding: 10.5rem 3rem;
-	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .site-title {
@@ -1190,6 +1172,11 @@ pre code {
   position: absolute; /* fixed for fullscreen */
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99
+	display: none;
+}
+
+.home .custom-header-media {
+	display: block;
 }
 
 @media (max-width: 48em) {
