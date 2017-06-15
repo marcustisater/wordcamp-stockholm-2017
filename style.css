@@ -3841,9 +3841,16 @@ img.emoji,img.wp-smiley {
 
 .Row {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	margin-bottom: 4em;
+	flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.Row {
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
+	}
 }
 
 .RowTextTitle {
