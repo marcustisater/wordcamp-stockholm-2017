@@ -566,15 +566,9 @@ body {
 	background: #fff;
 }
 
-@media (min-width:37.5em) {
-	body {
-		font-size: 1.125em;
-	}
-}
-
 @media (min-width:48em) {
 	body {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 }
 
@@ -599,7 +593,7 @@ h1,h2,h3,h4 {
 
 h1 {
 	font-size: 2.44141em;
-	color: #21759B;
+	color: #3f526b;
 }
 
 h2 {
@@ -607,7 +601,7 @@ h2 {
 }
 
 h2,h3 {
-	color: rgba(29,36,42,.9);
+	color: #3f526b;
 }
 
 h3 {
@@ -616,7 +610,7 @@ h3 {
 
 h4 {
 	font-size: 1.25em;
-	color: rgba(29,36,42,.9);
+	color: #3f526b;
 	letter-spacing: .025em;
 }
 
@@ -726,7 +720,6 @@ p {
 
 strong {
 	font-weight: 700;
-	color: rgba(0,0,0,.75);
 }
 
 em {
@@ -1009,9 +1002,7 @@ pre code {
 	font-size: 1em;
 	line-height: 1.5625em;
 	text-align: center;
-	color: rgba(29,36,42,.75);
-	font-family: ingra, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-	font-weight: 700;
+	color: #fff;
 	text-decoration: none;
 	background-color: #21759B;
 	border-radius: .1875rem;
@@ -1021,8 +1012,8 @@ pre code {
 }
 
 .button:active,.button:focus,.button:hover,button:active,button:focus,button:hover,input[type=button]:active,input[type=button]:focus,input[type=button]:hover,input[type=reset]:active,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:active,input[type=submit]:focus,input[type=submit]:hover {
-	color: rgba(29,36,42,.9);
-	background-color: #e6aa50;
+	color: #fff;
+	background-color: #3f526b;
 	text-decoration: none;
 }
 
