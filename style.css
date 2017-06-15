@@ -585,7 +585,7 @@ body {
 
 ::selection {
 	color: #fff;
-	background-color: #e6aa50;
+	background-color: #21759b;
 }
 
 h1,h2,h3,h4 {
@@ -1698,6 +1698,10 @@ pre code {
 	font-size: 2.44141em;
 	line-height: 1;
 	margin-bottom: 1.5rem;
+}
+
+.home .entry-title {
+	display: none;
 }
 
 .entry-title a:active,.entry-title a:focus,.entry-title a:hover {
@@ -3842,4 +3846,51 @@ img.emoji,img.wp-smiley {
 
 .kss-text>h1:first-child,.kss-text>h2:first-child,.kss-text>h3:first-child,.kss-text>h4:first-child {
 	margin-top: 0;
+}
+
+.Row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 4em;
+}
+
+.RowTextTitle {
+	font-family: Fira Sans,sans-serif;
+  font-weight: 300;
+	color: #3f526b;
+}
+
+.RowTextContent {
+	font-size: 0.8em;
+}
+
+.RowTextButton {
+	color: #faf8f5;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25;
+  padding: 1.25rem 2rem;
+  text-align: center;
+  text-decoration: none;
+	background: #21759b;
+}
+
+.RowTextButton:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.RowImage {
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 225px;
+}
+
+.Row:first-child .RowImage {
+	margin-right: 3em;
+}
+
+.Row:last-child .RowImage {
+	margin-left: 3em;
 }
