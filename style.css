@@ -1,5 +1,5 @@
 //@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-//@import url('https://fonts.googleapis.com/css?family=Lato:700');
+//@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700');
 
 .cc--var-local-thunder:after {
 	background-color: #2d282d;
@@ -561,10 +561,9 @@ textarea {
 body {
 	font-size: 1em;
 	line-height: 1.5625em;
-	font-family: ingra, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-	color: rgba(29,36,42,.75);
+	font-family: Merriweather,serif;	color: rgba(29,36,42,.75);
+	color: #000;
 	background: #fff;
-	font-feature-settings: liga;
 }
 
 @media (min-width:37.5em) {
@@ -1118,8 +1117,8 @@ pre code {
 	margin: 0;
 	font-size: 2.25em;
 	line-height: 1;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: -1.5px;
+	font-family: 'Fira Sans', sans-serif;
+	letter-spacing: -1px;
 	font-weight: 700;
 	text-transform: capitalize;
 	color: #fff;
@@ -1151,10 +1150,12 @@ pre code {
 
 .site-description {
 	margin: 0;
-	margin-top: .5rem;
-	font-size: 1.35em;
+	margin-top: 1.2rem;
+	font-size: 2em;
 	line-height: 1.25em;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: -0.5px;
 	text-transform: none;
 	color: #fff;
 }
@@ -1457,6 +1458,9 @@ pre code {
 .menu-item a {
 	display: block;
 	color: #fff;
+	font-family: Fira Sans,sans-serif;
+	font-weight: 500;
+	 text-transform: initial;
 	padding: .5rem 1rem;
 	text-decoration: none;
 	transition: all .15s ease;
@@ -1504,7 +1508,7 @@ pre code {
 		border: .375rem solid transparent;
 		margin-left: .5rem;
 		vertical-align: middle;
-		border-top-color: #e6aa50;
+		border-top-color: #fff;
 		content: "";
 	}
 
@@ -1514,12 +1518,12 @@ pre code {
 	}
 
 	.menu-item-has-children.focus>a,.menu-item-has-children:hover>a {
-		color: rgba(29,36,42,.9);
+		color: #fff;
 		background-color: #21759B;
 	}
 
 	.menu-item-has-children.focus>a:after,.menu-item-has-children:hover>a:after {
-		border-top-color: rgba(29,36,42,.9);
+		border-top-color: #fff	;
 	}
 
 	.menu-item-has-children.focus>.sub-menu,.menu-item-has-children:hover>.sub-menu {
@@ -1543,20 +1547,6 @@ pre code {
 	font-family: ingra, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
 
-@media (max-width:37.4375em) {
-	.sub-menu a {
-		padding-left: 2.5rem;
-		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
-		background-repeat: no-repeat;
-		background-size: 12px;
-		background-position: 1rem 50%;
-	}
-
-	.sub-menu a.focus,.sub-menu a:focus,.sub-menu a:hover {
-		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');
-	}
-}
-
 @media (min-width:37.5em) {
 	.sub-menu {
 		position: absolute;
@@ -1576,7 +1566,7 @@ pre code {
 
 	.sub-menu a {
 		padding: .625rem 1rem;
-		color: rgba(29,36,42,.75);
+		color: fff;
 	}
 }
 
