@@ -1125,7 +1125,7 @@ pre code {
 	text-decoration: none;
 }
 
-.site-title a:before {
+/*.site-title a:before {
 	display: block;
 	width: 180px;
 	height: 180px;
@@ -1137,7 +1137,7 @@ pre code {
 	background-image: url('https://2017.europe.wordcamp.org/files/2017/03/logo-wceu17-symbol.png');
 	background-size: 100%;
 	content: "";
-}
+}*/
 
 .site-description {
 	margin: 0;
@@ -3841,7 +3841,7 @@ img.emoji,img.wp-smiley {
 
 .Row {
 	display: flex;
-	margin-bottom: 4em;
+	margin-bottom: 4.25em;
 	flex-direction: column;
 }
 
@@ -3887,4 +3887,23 @@ img.emoji,img.wp-smiley {
 
 .Row:last-child .RowImage {
 	margin-left: 3em;
+}
+
+.contact-form input:focus,
+.contact-form input:active {
+	animation: background 0.55s ease-in;
+	background: #21759b;
+	color: #fff;
+}
+
+@keyframes background {
+  0% {
+    background: transparent;
+  }
+  66% {
+    background: #21759b;
+  }
+  100% {
+    background: #21759b;
+  }
 }
