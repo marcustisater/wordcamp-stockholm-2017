@@ -585,7 +585,6 @@ body {
 h1,h2,h3,h4 {
 	margin-bottom: 1.5rem;
 	margin-top: 0;
-	font-family: mostra-nuova-alt-d, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	font-weight: 700;
 	line-height: 1;
 	text-transform: uppercase;
@@ -633,7 +632,6 @@ input:not([type]),input[type=color],input[type=date],input[type=datetime-local],
 	padding: .4375rem 1rem;
 	margin: 0;
 	border: 1px solid #d5d4d5;
-	font-family: ingra, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.5625em;
 	color: rgba(29,36,42,.75);
@@ -672,7 +670,6 @@ select {
 	width: 100%;
 	padding: .4375rem 1rem;
 	border: 1px solid #d5d4d5;
-	font-family: ingra, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.5625em;
 	color: rgba(29,36,42,.75);
@@ -680,6 +677,27 @@ select {
 	background-color: #fff;
 	border-radius: .1875rem;
 	cursor: pointer;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+	box-shadow: 10px 10px 10px rgba(150, 195, 242, 0), -10px 10px 10px rgba(150, 195, 242, 0), 10px -10px 10px rgba(150, 195, 242, 0), -10px -10px 10px rgba(150, 195, 242, 0);
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	-ms-transition: box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form input:active,
+.contact-form select:focus,
+.contact-form select:active,
+.contact-form textarea:focus,
+.contact-form textarea:active {
+	border: 1px solid #7eabda;
+  outline: 0;
+  box-shadow: 3px 3px 0 #96c3f2, -3px 3px 0 #96c3f2, 3px -3px 0 #96c3f2, -3px -3px 0 #96c3f2;
 }
 
 a {
@@ -854,7 +872,6 @@ pre code {
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.5;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	text-transform: none;
 }
 
@@ -904,7 +921,6 @@ pre code {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
 
 .cc dd {
@@ -912,7 +928,6 @@ pre code {
 	font-size: 13px;
 	font-size: .8125rem;
 	line-height: 1.4;
-	font-family: Bitstream Vera Sans Mono, Consolas, Courier, monospace;
 	font-feature-settings: normal;
 }
 
@@ -962,7 +977,7 @@ pre code {
 
 .cc__title {
 	font-weight: 700;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
 }
 
 .cc__variable {
@@ -3634,7 +3649,7 @@ img.emoji,img.wp-smiley {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
 	font-weight: 700;
 	color: #444;
 	text-transform: none;
@@ -3667,7 +3682,7 @@ img.emoji,img.wp-smiley {
 	font-size: 1rem;
 	line-height: 1.5;
 	font-weight: 700;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
 	color: rgba(0,0,0,.9);
 	border-left: 4px solid #ff9505;
 	border-radius: 3px;
@@ -3700,7 +3715,7 @@ img.emoji,img.wp-smiley {
 	font-size: 14px;
 	font-size: .875rem;
 	line-height: 1.5;
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
 }
 
 .kss-section .kss-modifier__description {
@@ -3742,7 +3757,7 @@ img.emoji,img.wp-smiley {
 }
 
 .kss-style li,.kss-style p {
-	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -3887,23 +3902,4 @@ img.emoji,img.wp-smiley {
 
 .Row:last-child .RowImage {
 	margin-left: 3em;
-}
-
-.contact-form input:focus,
-.contact-form input:active {
-	animation: background 0.55s ease-in;
-	background: #21759b;
-	color: #fff;
-}
-
-@keyframes background {
-  0% {
-    background: transparent;
-  }
-  66% {
-    background: #21759b;
-  }
-  100% {
-    background: #21759b;
-  }
 }
