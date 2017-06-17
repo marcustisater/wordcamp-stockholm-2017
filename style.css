@@ -563,7 +563,7 @@ body {
 	line-height: 1.5625em;
 	font-family: Merriweather,serif;	color: rgba(29,36,42,.75);
 	color: #000;
-	background: #faf8f5;
+	background: #fff;
 }
 
 @media (min-width:48em) {
@@ -3883,14 +3883,14 @@ img.emoji,img.wp-smiley {
   padding: 1.25rem 2rem;
   text-align: center;
   text-decoration: none;
-	background: #faf8f5;
+	background: #fff;
 	border: 2px solid #21759b;
 	transition: all 0.25s ease;
 }
 
 .RowTextButton:hover {
 	background: #21759b;
-	color: #faf8f5;
+	color: #fff;
 	text-decoration: underline;
 }
 
