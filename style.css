@@ -1083,13 +1083,13 @@ pre code {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/tatiana-lapina-9276-e1497210063858.jpg);
+  background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/header-background.jpg);
   transition: all .15s ease;
 }
 
 @media (min-width: 48em) {
 	.site-header {
-  	background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/cropped-tatiana-lapina-9276.jpg);
+  	//background-image: url(header-background.jpg);
   	background-position: 50% 50%;
   	background-size: cover;
   }
@@ -1207,8 +1207,8 @@ pre code {
 	left: 0;
 	width: 100%;
 	height: 100%;
-  background: -webkit-linear-gradient(to bottom, rgba(189,195,199,0.3), rgba(44,62,80,0.3)); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, rgba(189,195,199,0.3), rgba(44,62,80,0.3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, rgba(189,195,199,0.6), rgba(44,62,80,0.6)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(189,195,199,0.6), rgba(44,62,80,0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .site-header:before {
