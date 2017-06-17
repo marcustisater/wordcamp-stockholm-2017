@@ -563,7 +563,7 @@ body {
 	line-height: 1.5625em;
 	font-family: Merriweather,serif;	color: rgba(29,36,42,.75);
 	color: #000;
-	background: #fff;
+	background: #faf8f5;
 }
 
 @media (min-width:48em) {
@@ -1650,13 +1650,13 @@ pre code {
 
 @media (min-width:37.5em) {
 	#primary {
-		padding: 6rem 2rem;
+		padding: 4rem 2rem;
 	}
 }
 
 @media (min-width:48em) {
 	#primary {
-		padding: 8.5rem 3rem;
+		padding: 6.5rem 3rem;
 	}
 }
 
@@ -3871,22 +3871,26 @@ img.emoji,img.wp-smiley {
 .RowTextTitle {
 	font-family: Fira Sans,sans-serif;
   font-weight: 300;
+	letter-spacing: -1px;
 	color: #3f526b;
 }
 
 .RowTextButton {
-	color: #faf8f5;
+	color: #21759b;
   display: block;
   font-size: 1rem;
   line-height: 1.25;
   padding: 1.25rem 2rem;
   text-align: center;
   text-decoration: none;
-	background: #21759b;
+	background: #faf8f5;
+	border: 2px solid #21759b;
+	transition: all 0.25s ease;
 }
 
 .RowTextButton:hover {
-	color: #fff;
+	background: #21759b;
+	color: #faf8f5;
 	text-decoration: underline;
 }
 
@@ -3896,10 +3900,18 @@ img.emoji,img.wp-smiley {
 	width: 225px;
 }
 
-.Row:first-child .RowImage {
-	margin-right: 3em;
+@media (min-width: 768px) {
+	.Row:first-child .RowImage {
+		margin-right: 3em;
+	}
+
+	.Row:last-child .RowImage {
+		margin-left: 3em;
+	}
 }
 
-.Row:last-child .RowImage {
-	margin-left: 3em;
+@media (max-width: 768px) {
+	.Row:last-child .RowImage {
+		order: -1;
+	}
 }
