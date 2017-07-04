@@ -1087,19 +1087,9 @@ pre code {
   transition: all .15s ease;
 }
 
-@media (min-width: 48em) {
-	.site-header {
-  	//background-image: url(header-background.jpg);
-  	background-position: 50% 50%;
-  	background-size: cover;
-  }
-}
-
-@media (min-width:37.5em) {
-	.site-header,
-	.site-header .site-branding {
-		height: 60vh;
-	}
+.site-header,
+.site-header .site-branding {
+	height: 60vh;
 }
 
 @media (min-width:37.5em) {
@@ -1107,6 +1097,14 @@ pre code {
 	.home .site-header .site-branding {
 		height: 100vh;
 	}
+}
+
+@media (min-width: 48em) {
+	.site-header {
+  	//background-image: url(header-background.jpg);
+  	background-position: 50% 50%;
+  	background-size: cover;
+  }
 }
 
 .site-header .site-branding {
@@ -1121,13 +1119,19 @@ pre code {
 
 .site-title {
 	margin: 0;
-	font-size: 2.25em;
+	font-size: 2em;
 	line-height: 1;
 	font-family: 'Fira Sans', sans-serif;
 	letter-spacing: -1px;
 	font-weight: 700;
 	text-transform: capitalize;
 	color: #fff;
+}
+
+@media (min-width:37.5em)  {
+	.site-title {
+		font-size: 2.25em;
+	}
 }
 
 .site-title a {
@@ -1157,13 +1161,17 @@ pre code {
 .site-description {
 	margin: 0;
 	margin-top: 1.2rem;
-	font-size: 2em;
+	font-size: 1.6em;
 	line-height: 1.25em;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	letter-spacing: -0.5px;
 	text-transform: none;
 	color: #fff;
+}
+
+@media (min-width:37.5em)  {
+	font-size: 2em;
 }
 
 .site-header {
@@ -1349,6 +1357,7 @@ pre code {
 }
 
 .menu-toggle:before {
+	color: #fff;
 	font-size: 16px;
 	line-height: 24px;
 	content: "Menu";
