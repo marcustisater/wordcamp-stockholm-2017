@@ -1087,7 +1087,7 @@ pre code {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  background-image: url(https://2017.stockholm.wordcamp.org/files/2017/06/header-background.jpg);
+  background-image: url('https://2017.stockholm.wordcamp.org/files/2017/07/header-alt.jpg');
   transition: all .15s ease;
 }
 
