@@ -1492,6 +1492,7 @@ pre code {
 
 .current-menu-item>a {
 	color: #21759b;
+	border: 1px solid #21759b;
 	background-color: #fff;
 }
 
