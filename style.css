@@ -568,7 +568,7 @@ body {
 
 @media (min-width:48em) {
 	body {
-		font-size: 1em;
+		font-size: 1.15em;
 	}
 }
 
@@ -1130,7 +1130,7 @@ pre code {
 
 @media (min-width:37.5em)  {
 	.site-title {
-		font-size: 3.25em;
+		font-size: 3.35em;
 	}
 }
 
@@ -1161,7 +1161,7 @@ pre code {
 .site-description {
 	margin: 0;
 	margin-top: 1.2rem;
-	font-size: 1.6em;
+	font-size: 1.7em;
 	line-height: 1.25em;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
@@ -1225,8 +1225,9 @@ pre code {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(45,40,45,.6);
+	background-color: rgba(45,40,45,.2);
 	content: "";
+	z-index: 999;
 }
 
 .site-header>* {
@@ -3880,7 +3881,6 @@ img.emoji,img.wp-smiley {
 .RowTextTitle {
 	font-family: Fira Sans,sans-serif;
   font-weight: 300;
-	letter-spacing: -1px;
 	color: #3f526b;
 }
 
@@ -3923,4 +3923,20 @@ img.emoji,img.wp-smiley {
 	.Row:last-child .RowImage {
 		order: -1;
 	}
+}
+
+.full-width-image {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: 2rem;
+}
+
+/* overrides figure */ 
+.full-width-image img {
+	width: 100vw !important;
+	max-width: none !important;
 }
