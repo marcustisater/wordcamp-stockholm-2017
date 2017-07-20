@@ -560,10 +560,13 @@ textarea {
 
 body {
 	font-size: 1em;
-	line-height: 1.5625em;
-	font-family: Merriweather,serif;	color: rgba(29,36,42,.75);
 	color: #000;
 	background: #fff;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	line-height: 1.6em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: rgba(29,36,42,.85);
 }
 
 @media (min-width:48em) {
@@ -584,7 +587,6 @@ body {
 
 h1,h2,h3,h4 {
 	margin-bottom: 1.5rem;
-	margin-top: 0;
 	line-height: 1;
 	text-transform: uppercase;
 	font-family: Fira Sans, sans-serif;
@@ -3935,7 +3937,7 @@ img.emoji,img.wp-smiley {
 	margin-bottom: 2rem;
 }
 
-/* overrides figure */ 
+/* overrides figure */
 .full-width-image img {
 	width: 100vw !important;
 	max-width: none !important;
